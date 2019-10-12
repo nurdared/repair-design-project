@@ -1,0 +1,171 @@
+@import "fonts";
+.header-container {
+    width: 100%;
+    background: #131313;
+}
+.header {
+    width: 87.34%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 83px;
+    background: #131313;
+    font-family: "FuturaDemiC";
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.logo {
+    width: 16%;
+    color: #E3B873;
+    font-size: 14px;
+    line-height: 16px;
+    margin-right: 6.60%;
+}
+
+.navbar {
+    width: 581.43px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    &__link {
+        color: #FFFFFF;
+        text-decoration: none;
+        
+    }
+    &__link_active {
+        color: #E3B873;
+    }
+}
+
+.phone-number {
+    margin-left: 45px;
+    text-decoration-line: underline;
+    color: #E3B873;
+    padding-right: 3.13%;
+}
+
+.button {
+    color: #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    font-family: "FuturaDemiC";
+    border-radius: 2px;
+    text-decoration: none; 
+    
+    
+
+    &_request {
+        background: #E3B873;
+        padding: 13px 33px;
+    }
+
+    &_calculate {
+        background: #E3B873;
+        padding: 19px 41px;
+        font-size: 13px;
+        line-height: 15px;
+        margin-right: 20px;
+    }
+
+    &_submit {
+        padding: 19px 22px;
+        font-size: 13px;
+        line-height: 15px;
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+    }
+}
+
+.welcome {
+    display: flex;
+    
+}
+
+.instagram {
+    width: 5.7%;
+    height: 658px;
+    background: #131313;
+    
+    &__link {    
+        position: absolute; 
+        text-decoration: none;   
+        font-family: FuturaDemiC;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        margin-top: 211px;
+        color: #E3B873;
+        transform: rotate(90deg);
+    }
+
+    &__vector {
+        position: absolute;
+        width: 51px;
+        transform: rotate(90deg);
+        border-top: 1.5px solid #E3B873;
+        margin-top: 292px;
+        margin-left: 13px;
+    }
+}
+
+.image {
+    background: url("./assets/images/image\ 4.3.jpg");
+    background-size: cover;
+    width: 94.3%;
+    display: grid;
+}
+
+.article {
+    align-self: center;
+    margin-left: 4.17%;
+
+    &__title {
+        font-family: "Yeseva One";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 53px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    &__title_city-name {
+        color: #E3B873;
+    }
+
+    &__text {
+        font-family: "FuturaBookC";
+        font-size: 22px;
+        line-height: 30px;
+        color: #FFFFFF;
+    }
+}
+
+.scroll-text {
+    position: absolute;
+    margin-top: -58px;
+    padding: 40px 78px 40px 48px;
+    background: #131313;
+    text-decoration: none;
+    font-family: Yeseva One;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.scroll-button {
+    padding: 9px 10px;
+    border: 1.5px solid #E3B873;
+    border-radius: 50%;
+    margin-left: 12px;
+    color: #E3B873;
+}
+
+
+
+
+
