@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/89cc5c3206.js" crossorigin="anonymous"></script>
     <title>Repair Design Project</title>
 </head>
+
 <body>
     <div class="header-container">
         <header class="header">
@@ -28,7 +31,7 @@
             <a href="#" class="button button_request">Request a call</a>
         </header>
     </div>
-    
+
     <main>
         <section class="welcome">
             <div class="instagram">
@@ -37,20 +40,221 @@
             </div>
             <div class="image">
                 <article class="article">
-                    <h2 class="article__title">Turnkey Repair in the<br>city of <span class="article__title_city-name">Rostov-on-Don</span></h2>
+                    <h2 class="article__title">Turnkey Repair in the<br>city of <span
+                            class="article__title_city-name">Rostov-on-Don</span></h2>
                     <p class="article__text">Get ready-made turnkey repairs on time<br>
-                                             with work time saving up to 45 days and 20% from<br>
-                                             cost of materials due to the organization of work</p>
+                        with work time saving up to 45 days and 20% from<br>
+                        cost of materials due to the organization of work</p>
                     <a href="#" class="button button_calculate">CALCULATE THE COST</a>
                     <a href="#" class="button button_submit">SUBMIT YOUR APPLICATION</a>
                 </article>
-                
-                
+
+
             </div>
         </section>
         <a href="" class="scroll-text">Scroll down <i class="fas fa-chevron-down scroll-button"></i></a>
+        <section class="projects-container">
+            <nav>
+                <ul class="navbar projects-navbar">
+                    <li class="navbar__item"><a class="navbar__link navbar__link-secondary_active"
+                            href="#">Rostov-on-Don, Admiral</a></li>
+                    <li class="navbar__item"><a class="navbar__link navbar__link-secondary" href="#">Sochi Thieves</a>
+                    </li>
+                    <li class="navbar__item"><a class="navbar__link navbar__link-secondary" href="#">Rostov-on-Don
+                            Patriotic</a></li>
+                </ul>
+            </nav>
+            <div class="completed-projects">
+                <div class="projects-text">
+                    <div class="projects-text__title">Completed<br>projects<span class="dash"></span></div>
+                    <p class="projects-text__description">Only a small part of the work performed by our company is
+                        presented on the site. For 14 years on in the construction
+                        market we have made happy more than 1000 families</p>
+                    <div class="row">
+                        <div class="projects-text__information">
+                            <div class="information-title">City:</div>
+                            <div class="information-text">Rostov-on-Don<br>LCD admiral</div>
+                        </div>
+                        <div class="projects-text__information">
+                            <div class="information-title">apartment area:</div>
+                            <div class="information-text">81 m2</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="projects-text__information">
+                            <div class="information-title">Repair time:</div>
+                            <div class="information-text">3.5 months</div>
+                        </div>
+                        <div class="projects-text__information">
+                            <div class="information-title">Repair Cost:</div>
+                            <div class="information-text">Upon request</div>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <img class="arrow-left" src="./assets/images/arrowleft.png" alt="">
+                        <div data-tooltip="Tooltip 1" class="pagination__dot pagination__dot--active"></div>
+                        <div data-tooltip="Tooltip 2" class="pagination__dot"></div>
+                        <div data-tooltip="Tooltip 3" class="pagination__dot"></div>
+                        <img class="arrow-right" src="./assets/images/arrow.png" alt="">
+                    </div>
+                </div>
+                <div class="projects-images">
+                    <img src="./assets/images/image 2.1.png" alt="" class="project-images__image">
+                    <img src="./assets/images/image 2.1.jpg" alt="" class="project-images__image">
+                </div>
+            </div>
+        </section>
 
+        <section class="video-form-container">
+            <div class="video-header">
+                <div class="video-title">online control</div>
+                <div class="video-logo"><img src="./assets/images/video-logo.png" alt=""></div>
+            </div>
+            <div>
+                <iframe class="video" src="https://www.youtube.com/embed/RHj5bdrfCr8" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video-dash">
+                <img src="./assets/images/dash.png" alt="">
+            </div>
+            <div class="video-description">
+                At each facility, a camera is installed that broadcasts the progress of work on the clock.<br>At any
+                time,
+                you can go to our website and monitor the progress of work in your<br>apartment. You can watch the live
+                broadcast from one of our facilities!<br>Leave a request below and you will receive a link to the
+                broadcast.
+            </div>
+            <form class="video-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-group__label" for="name">Name</label>
+                        <input class="form-group__input" id="name" type="text" required
+                            placeholder="What is your name:">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-group__label" for="phone">Phone</label>
+                        <input class="form-group__input" id="phone" type="text" required
+                            placeholder="Your phone number:">
+                    </div>
+                    <div class="form-group">
+
+                        <input class="form-group__submit" type="submit" value="Submit">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label class="checkbox-container">
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                        I agree to the processing of personal data
+                    </label>
+                </div>
+                </div>
+            </form>
+        </section>
+
+        <section class="repair-types-container">
+            <div class="type-header-title">Types of repair</div>
+            <img src="./assets/images/repair.png" alt="">
+            </div>
+            <div class="repair-types">
+                <div class="repair-types__item">
+                    <img src="./assets/images/type1.png" alt="">
+                    <div class="box">
+                        <div class="box__title">Redecorating</div>
+                        <ul class="box__list">
+                            <li>Dismantling of old coatings</li>
+                            <li>Wallpapering</li>
+                            <li>Painting walls and ceilings</li>
+                            <li>Laying flooring</li>
+                            <li>Replacing plumbing</li>
+                            <li>Replacing sockets and switches</li>
+                            <li>Replacing doors</li>
+                        </ul>
+                        <a href="" class="button button_box">from 900 rub / m2</a>
+                    </div>
+                </div>
+                <div class="repair-types__item">
+                    <img src="./assets/images/type2.png" alt="">
+                    <div class="box">
+                        <div class="box__title">Overhaul</div>
+                        <ul class="box__list">
+                            <li>Dismantling of old coatings</li>
+                            <li>Wallpapering</li>
+                            <li>Painting walls and ceilings</li>
+                            <li>Laying flooring</li>
+                            <li>Replacing plumbing</li>
+                            <li>Replacing sockets and switches</li>
+                            <li>Replacing doors</li>
+                        </ul>
+                        <a href="" class="button button_box">from 1800 rub / m2</a>
+                    </div>
+                </div>
+                <div class="repair-types__item">
+                    <img src="./assets/images/type3.png" alt="">
+                    <div class="box">
+                        <div class="box__title">Designer Repair</div>
+                        <ul class="box__list">
+                            <li>Dismantling of old coatings</li>
+                            <li>Wallpapering</li>
+                            <li>Painting walls and ceilings</li>
+                            <li>Laying flooring</li>
+                            <li>Replacing plumbing</li>
+                            <li>Replacing sockets and switches</li>
+                            <li>Replacing doors</li>
+                        </ul>
+                        <a href="" class="button button_box">from 4000 rub / m2</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="condition-details">
+            <div class="condition-image">
+                <img src="./assets/images/cirlce.png" alt="">
+            </div>
+            <div class="condition-form-container">
+                <div class="condition-form">
+                    <div class="form-row condition-row">
+                        <div class="form-title">Leave a request for free<br>departure of the measurer</div>
+                    </div>
+                    <div class="form-row condition-row">
+                        <div class="form-group">
+                            <label class="form-group__label form-group__label_condition" for="name">Name</label>
+                            <input class="form-group__input form-group__input_condition" id="name" type="text" required
+                                placeholder="What is your name:">
+                        </div>
+                    </div>
+                    <div class="form-row condition-row">
+                        <div class="form-group">
+                            <label class="form-group__label form-group__label_condition" for="phone">Phone</label>
+                            <input class="form-group__input form-group__input_condition" id="phone" type="text" required
+                                placeholder="Your phone number:">
+                        </div>
+                    </div>
+                    <div class="form-row condition-row">
+                        <label class="checkbox-container checkbox-container_condition">
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                            I agree to the processing of personal data
+                        </label>
+                    </div>
+                    <div class="form-row condition-row">
+                        <div class="form-group">
+                            <input class="form-group__submit" type="submit" value="Submit">
+                        </div>
+                    </div>
+                </div>
+                <div class="sales">
+                    <div class="sales__image"><img src="./assets/images/pork.png" alt=""></div>
+                    <div class="sales__title">Help save 10 - 20% of the<br>cost of materials</div>
+                </div>
+            </div>
+            </div>
+        </section>
     </main>
     <footer></footer>
 </body>
+
 </html>
