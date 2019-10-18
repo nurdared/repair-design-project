@@ -174,6 +174,7 @@ $gray: rgba(255, 255, 255, 0.3);
 
 .scroll-text {
   position: absolute;
+  z-index: 1;
   margin-top: -58px;
   padding: 40px 78px 40px 48px;
   background: $dark;
@@ -195,6 +196,7 @@ $gray: rgba(255, 255, 255, 0.3);
 
 .projects-container {
   background: $dark;
+  position: relative;
 }
 
 .completed-projects {
@@ -285,6 +287,8 @@ $gray: rgba(255, 255, 255, 0.3);
   margin: auto;
   margin-top: 130px;
   text-align: center;
+  position: relative;
+  z-index: 1;
 
   &__dot {
     position: relative;
@@ -339,8 +343,10 @@ $gray: rgba(255, 255, 255, 0.3);
 }
 
 .video {
+  position: relative;
   width: 56.81%;
   height: 434px;
+
 }
 
 .video-dash {
@@ -370,8 +376,9 @@ $gray: rgba(255, 255, 255, 0.3);
 }
 
 .form-group {
-  display: grid;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 
   &__input {
     padding-bottom: 20px;
@@ -406,6 +413,27 @@ $gray: rgba(255, 255, 255, 0.3);
     color: $light;
   }
 
+  &__input_contact {
+    font-size: 18px;
+    line-height: 25px;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding-bottom: 0;
+    margin: 0;
+    color: $light;
+  }
+  &__input_contact_row {
+    width: 231px;
+  }
+
+
+  &__input_contact::placeholder {
+    font-family: "FuturaBookC";
+    font-size: 18px;
+    line-height: 24px;
+    color: $light;
+  }
+
   &__label {
     justify-self: start;
     font-family: "FuturaBookC";
@@ -432,6 +460,10 @@ $gray: rgba(255, 255, 255, 0.3);
     font-size: 15px;
     line-height: 26px;
     text-transform: uppercase;
+  }
+
+  &__submit_next {
+    margin: 0 auto;
   }
 }
 
@@ -479,6 +511,10 @@ $gray: rgba(255, 255, 255, 0.3);
   height: 25px;
   width: 25px;
   background-color: #eee;
+
+  &_next {
+    left: 105px;
+  }
 }
 
 /* On mouse-over, add a grey background color */
@@ -531,7 +567,7 @@ $gray: rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
   color: #181818;
   &_next {
-      margin: 112.50px 0 13px 0;
+    margin: 112.5px 0 13px 0;
   }
 }
 
@@ -725,30 +761,28 @@ $gray: rgba(255, 255, 255, 0.3);
 }
 
 .repair-description {
-    font-family: FuturaBookC;
-    font-size: 20px;
-    line-height: 27px;
-    text-align: center;
-    color: #363636;
+  font-family: FuturaBookC;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #363636;
 
-    &_next {
-        margin-bottom: 39px;
-    }
-
+  &_next {
+    margin-bottom: 39px;
+  }
 }
 
 .steps-container {
-    display: flex;
-    height: 1615px;
-    background: $dark;
-    margin-top: -425px;
+  display: flex;
+  height: 1615px;
+  background: $dark;
+  margin-top: -425px;
 }
 
 .steps-info {
   padding-top: 428px;
   padding-left: 100px;
   width: 340px;
-
 
   &__phrase {
     font-family: "FuturaDemiC";
@@ -796,7 +830,7 @@ $gray: rgba(255, 255, 255, 0.3);
 
 .steps-table {
   padding: 515px 100px 44px 136px;
-  
+
   &__row {
     display: flex;
     flex-direction: row;
@@ -814,13 +848,12 @@ $gray: rgba(255, 255, 255, 0.3);
     font-size: 15px;
     line-height: 21px;
     text-transform: uppercase;
-    
   }
-  
+
   &__title_active {
     color: $light;
   }
-  
+
   &__link {
     border-bottom: 1px solid rgba(227, 184, 115, 0.3);
     text-decoration: none;
@@ -849,6 +882,7 @@ $gray: rgba(255, 255, 255, 0.3);
 }
 
 .team-container {
+  position: relative;
   height: 1938px;
   margin-top: -407px;
   text-align: center;
@@ -859,7 +893,7 @@ $gray: rgba(255, 255, 255, 0.3);
   justify-content: space-between;
   width: 76.38%;
   margin: 0 auto;
-  
+
   &__box {
     position: relative;
     width: 342px;
@@ -926,4 +960,154 @@ $gray: rgba(255, 255, 255, 0.3);
 
 .team-description {
   margin-bottom: 39px;
+}
+
+.team-dash {
+  margin: 50px 0 17px 0;
+}
+
+.buildings-image {
+  position: absolute;
+  bottom: 0;
+}
+
+.client-reviews {
+  display: flex;
+  justify-content: space-between;
+  width: 1236px;
+  margin: 0 auto;
+
+  &__box {
+    position: relative;
+    width: 376px;
+    height: 455px;
+  }
+
+  &__info {
+    height: 428px;
+    background: $light;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
+  }
+
+  &__data {
+    padding: 24px 32px 24px 20px;
+  }
+
+  &__order {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 293.75px;
+    height: 54px;
+    background: $yellow;
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.7);
+    font-family: "Yeseva One";
+    font-size: 17px;
+    line-height: 24px;
+    color: $light;
+    text-transform: uppercase;
+  }
+
+  &__size {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 107.09px;
+    padding: 0 13.5px 0 13.5px;
+    border-right: 0.75px solid $light;
+  }
+
+  &__duration {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 13.5px 0 13.5px;
+    width: 130.66px;
+  }
+
+  &__name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 251px;
+    font-family: "Yeseva One";
+    font-size: 18px;
+    line-height: 23px;
+    color: #181818;
+  }
+
+  &__portrait {
+    border-radius: 50%;
+  }
+
+  &__comment {
+    margin-top: 12px;
+    font-family: FuturaBookC;
+    font-size: 15px;
+    line-height: 27px;
+    text-align: left;
+    color: #959595;
+  }
+}
+
+
+.contacts-container {
+  height: 954px;
+  background: url("./assets/images/footerbg.png");
+  margin: 0 auto;
+}
+
+.contact-form-container {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 108px;
+  width: 883px;
+  height: 445.32px;
+  background: $dark;
+}
+
+.contact-form {
+  height: 376.2px;
+  padding: 34.4px 181.5px;
+  color: $light;
+}
+
+.contact-row {
+  margin-bottom: 46px;
+
+  &:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.address {
+  padding-top: 300px;
+  font-family: "Yeseva One";
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $yellow;
+}
+
+.sn-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 71px;
+  margin: 0 auto;
+  margin-top: 25px;
+
+  &__icon {
+    cursor: pointer;
+  }
+}
+
+.map {
+  text-align: center;
+  margin-top: 30px;
 }

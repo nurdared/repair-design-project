@@ -201,6 +201,7 @@
 
 .scroll-text {
   position: absolute;
+  z-index: 1;
   margin-top: -58px;
   padding: 40px 78px 40px 48px;
   background: #131313;
@@ -222,6 +223,7 @@
 
 .projects-container {
   background: #131313;
+  position: relative;
 }
 
 .completed-projects {
@@ -332,6 +334,8 @@
   margin: auto;
   margin-top: 130px;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .pagination__dot {
@@ -388,6 +392,7 @@
 }
 
 .video {
+  position: relative;
   width: 56.81%;
   height: 434px;
 }
@@ -429,11 +434,16 @@
 }
 
 .form-group {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 .form-group__input {
@@ -512,6 +522,48 @@
   color: #ffffff;
 }
 
+.form-group__input_contact {
+  font-size: 18px;
+  line-height: 25px;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding-bottom: 0;
+  margin: 0;
+  color: #ffffff;
+}
+
+.form-group__input_contact_row {
+  width: 231px;
+}
+
+.form-group__input_contact::-webkit-input-placeholder {
+  font-family: "FuturaBookC";
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.form-group__input_contact:-ms-input-placeholder {
+  font-family: "FuturaBookC";
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.form-group__input_contact::-ms-input-placeholder {
+  font-family: "FuturaBookC";
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.form-group__input_contact::placeholder {
+  font-family: "FuturaBookC";
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
 .form-group__label {
   -ms-grid-column-align: start;
       justify-self: start;
@@ -539,6 +591,10 @@
   font-size: 15px;
   line-height: 26px;
   text-transform: uppercase;
+}
+
+.form-group__submit_next {
+  margin: 0 auto;
 }
 
 .video-form {
@@ -585,6 +641,10 @@
   height: 25px;
   width: 25px;
   background-color: #eee;
+}
+
+.checkmark_next {
+  left: 105px;
 }
 
 /* On mouse-over, add a grey background color */
@@ -638,7 +698,7 @@
 }
 
 .type-header-title_next {
-  margin: 112.50px 0 13px 0;
+  margin: 112.5px 0 13px 0;
 }
 
 .repair-types {
@@ -1032,6 +1092,7 @@
 }
 
 .team-container {
+  position: relative;
   height: 1938px;
   margin-top: -407px;
   text-align: center;
@@ -1124,5 +1185,186 @@
 
 .team-description {
   margin-bottom: 39px;
+}
+
+.team-dash {
+  margin: 50px 0 17px 0;
+}
+
+.buildings-image {
+  position: absolute;
+  bottom: 0;
+}
+
+.client-reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1236px;
+  margin: 0 auto;
+}
+
+.client-reviews__box {
+  position: relative;
+  width: 376px;
+  height: 455px;
+}
+
+.client-reviews__info {
+  height: 428px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
+}
+
+.client-reviews__data {
+  padding: 24px 32px 24px 20px;
+}
+
+.client-reviews__order {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 293.75px;
+  height: 54px;
+  background: #e3b873;
+  -webkit-box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.7);
+          box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.7);
+  font-family: "Yeseva One";
+  font-size: 17px;
+  line-height: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.client-reviews__size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 107.09px;
+  padding: 0 13.5px 0 13.5px;
+  border-right: 0.75px solid #ffffff;
+}
+
+.client-reviews__duration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 13.5px 0 13.5px;
+  width: 130.66px;
+}
+
+.client-reviews__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 251px;
+  font-family: "Yeseva One";
+  font-size: 18px;
+  line-height: 23px;
+  color: #181818;
+}
+
+.client-reviews__portrait {
+  border-radius: 50%;
+}
+
+.client-reviews__comment {
+  margin-top: 12px;
+  font-family: FuturaBookC;
+  font-size: 15px;
+  line-height: 27px;
+  text-align: left;
+  color: #959595;
+}
+
+.contacts-container {
+  height: 954px;
+  background: url("./assets/images/footerbg.png");
+  margin: 0 auto;
+}
+
+.contact-form-container {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 108px;
+  width: 883px;
+  height: 445.32px;
+  background: #131313;
+}
+
+.contact-form {
+  height: 376.2px;
+  padding: 34.4px 181.5px;
+  color: #ffffff;
+}
+
+.contact-row {
+  margin-bottom: 46px;
+}
+
+.contact-row:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-row:last-child {
+  margin-bottom: 0;
+}
+
+.address {
+  padding-top: 300px;
+  font-family: "Yeseva One";
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #e3b873;
+}
+
+.sn-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 71px;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+.sn-icons__icon {
+  cursor: pointer;
+}
+
+.map {
+  text-align: center;
+  margin-top: 30px;
 }
 /*# sourceMappingURL=style.css.map */
