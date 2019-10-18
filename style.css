@@ -231,12 +231,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   width: 100%;
 }
 
@@ -251,12 +245,14 @@
   font-size: 14px;
   line-height: 19px;
   text-transform: uppercase;
+  z-index: 1;
 }
 
 .projects-text {
   width: 30.74%;
   margin-left: 6.95%;
   padding-top: 60px;
+  z-index: 1;
 }
 
 .projects-text__title {
@@ -320,14 +316,40 @@
 }
 
 .projects-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   overflow: hidden;
+  width: 845px;
+  height: 482px;
   padding-top: 60px;
   margin-left: 48px;
+  z-index: 1;
 }
 
-.projects-images__image {
-  height: 47.22%;
-  width: 33.52%;
+.projects-images__image:nth-child(2) {
+  margin-right: 20px;
+}
+
+.slider-buttons__left {
+  position: absolute;
+  display: none;
+  height: 85px;
+  top: 46.5%;
+  left: 25px;
+  cursor: pointer;
+}
+
+.slider-buttons__right {
+  position: absolute;
+  height: 85px;
+  top: 46.5%;
+  right: 25px;
+  cursor: pointer;
 }
 
 .pagination {
@@ -860,6 +882,10 @@
   z-index: -1;
 }
 
+.flat-back-image_size {
+  width: 100%;
+}
+
 .flat-items {
   padding: 0 103px;
   display: -webkit-box;
@@ -1194,6 +1220,10 @@
 .buildings-image {
   position: absolute;
   bottom: 0;
+}
+
+.buildings-image_size {
+  width: 100%;
 }
 
 .client-reviews {
