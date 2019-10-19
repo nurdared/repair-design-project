@@ -13,6 +13,10 @@
   src: local("Proxima Nova"), url("./assets/fonts/FontsFree-Net-proxima_nova_reg-webfont.ttf") format("truetype");
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .header-container {
   width: 100%;
   background: #131313;
@@ -476,6 +480,13 @@
   color: #ffffff;
 }
 
+@media (max-width: 375px) {
+  .information-text {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -728,7 +739,7 @@
 
 @media (max-width: 375px) {
   .video-description {
-    width: 100%;
+    width: 90.67%;
     margin-bottom: 61px;
     font-size: 14px;
     line-height: 24px;
@@ -793,7 +804,7 @@
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
-    margin: 0 0 62.43px 0;
+    margin: 0 0 36px 0;
   }
 }
 
