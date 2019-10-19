@@ -21,6 +21,13 @@ $gray: rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
   font-size: 14px;
   line-height: 16px;
+  @media (max-width: 375px) {
+    justify-content: space-between;
+    width: 90.93%;
+    height: 57px;
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 .logo {
@@ -29,6 +36,12 @@ $gray: rgba(255, 255, 255, 0.3);
   font-size: 14px;
   line-height: 16px;
   margin-right: 6.6%;
+  @media (max-width: 375px) {
+    margin-right: 0;
+    width: 46.93%;
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 .navbar {
@@ -57,6 +70,10 @@ $gray: rgba(255, 255, 255, 0.3);
     color: $yellow;
     padding-bottom: 5px;
   }
+
+  @media (max-width: 375px) {
+    display: none;
+  }
 }
 
 .phone-number {
@@ -64,6 +81,12 @@ $gray: rgba(255, 255, 255, 0.3);
   text-decoration-line: underline;
   color: $yellow;
   padding-right: 3.13%;
+  @media (max-width: 375px) {
+    margin: 0;
+    padding: 0;
+    color: $light;
+    text-decoration: none;
+  }
 }
 
 .button {
@@ -76,6 +99,9 @@ $gray: rgba(255, 255, 255, 0.3);
   &_request {
     background: $yellow;
     padding: 13px 33px;
+    @media (max-width: 375px) {
+      display: none;
+    }
   }
 
   &_calculate {
@@ -84,6 +110,15 @@ $gray: rgba(255, 255, 255, 0.3);
     font-size: 13px;
     line-height: 15px;
     margin-right: 20px;
+    @media (max-width: 375px) {
+      margin: 0;
+      margin-bottom: 26px;
+      padding: 19px 70px;
+      font-size: 13px;
+      line-height: 15px;
+      text-align: center;
+    }
+    
   }
 
   &_submit {
@@ -92,6 +127,16 @@ $gray: rgba(255, 255, 255, 0.3);
     line-height: 15px;
     border: 1px solid $light;
     box-sizing: border-box;
+    @media (max-width: 375px) {
+      margin: 0;
+      padding: 19px 84px;
+      font-size: 13px;
+      line-height: 15px;
+      text-align: center;
+      &_mobile {
+        display: none;
+      }
+    }
   }
 
   &_box {
@@ -106,6 +151,13 @@ $gray: rgba(255, 255, 255, 0.3);
     width: 195px;
     box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.1);
     margin-bottom: -28px;
+    @media (max-width: 375px) {
+      margin: 0;
+      padding: 11.36px 19.21px;
+      font-size: 15px;
+      line-height: 21px;
+      text-align: center;
+    }
   }
 }
 
@@ -138,6 +190,10 @@ $gray: rgba(255, 255, 255, 0.3);
     margin-top: 292px;
     margin-left: 13px;
   }
+
+  @media (max-width: 375px) {
+    display: none;
+  }
 }
 
 .image {
@@ -145,6 +201,12 @@ $gray: rgba(255, 255, 255, 0.3);
   background-size: cover;
   width: 94.3%;
   display: grid;
+  @media (max-width: 375px) {
+    background: url("./assets/images/mobbgtop.png");
+    width: 100%;
+    height: 476px;
+    align-items: center;
+  }
 }
 
 .article {
@@ -170,6 +232,26 @@ $gray: rgba(255, 255, 255, 0.3);
     color: $light;
     margin-bottom: 70px;
   }
+
+  @media (max-width: 375px) {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0 18px 0 18px;
+    &__title {
+      margin: 0;
+      margin-bottom: 16px;
+      font-size: 23px;
+      line-height: 31px;
+    }
+
+    &__text {
+      margin: 0;
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 32px;
+    }
+  }
 }
 
 .scroll-text {
@@ -184,6 +266,9 @@ $gray: rgba(255, 255, 255, 0.3);
   line-height: 19px;
   text-transform: uppercase;
   color: $light;
+  @media (max-width: 375px) {
+    display: none;
+  }
 }
 
 .scroll-button {
@@ -192,6 +277,9 @@ $gray: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   margin-left: 12px;
   color: $yellow;
+  @media (max-width: 375px) {
+    display: none;
+  }
 }
 
 .projects-container {
@@ -203,6 +291,11 @@ $gray: rgba(255, 255, 255, 0.3);
   height: 946px;
   display: flex;
   width: 100%;
+  @media (max-width: 375px) {
+    height: 724px;
+    display: block;
+    border: 0;
+  }
 }
 
 .projects-navbar {
@@ -224,7 +317,15 @@ $gray: rgba(255, 255, 255, 0.3);
   margin-left: 6.95%;
   padding-top: 60px;
   z-index: 1;
-
+  @media (max-width: 375px) {
+    display: block;
+    padding-top: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 34px;
+  }
+  
+  
   &__title {
     font-family: "Yeseva One";
     font-size: 27px;
@@ -232,13 +333,26 @@ $gray: rgba(255, 255, 255, 0.3);
     letter-spacing: -0.07em;
     text-transform: uppercase;
     color: $yellow;
+    @media (max-width: 375px) {
+      font-size: 22px;
+      line-height: 30px;
+      text-align: center;
+    }
   }
-
+  
   &__description {
     font-family: FuturaBookC;
     font-size: 18px;
     line-height: 29px;
     color: $light;
+    @media (max-width: 375px) {
+      width: 82.93%;
+      font-size: 14px;
+      line-height: 22px;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 22px;
+    }
   }
 
   &__information {
@@ -246,6 +360,7 @@ $gray: rgba(255, 255, 255, 0.3);
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
+
   }
 }
 
@@ -255,6 +370,10 @@ $gray: rgba(255, 255, 255, 0.3);
   line-height: 25px;
   text-transform: uppercase;
   color: $yellow;
+  @media (max-width: 375px) {
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
 
 .information-text {
@@ -270,6 +389,16 @@ $gray: rgba(255, 255, 255, 0.3);
   flex-wrap: wrap;
   width: 100%;
   margin-bottom: 34px;
+  @media (max-width: 375px) {
+    font-size: 14px;
+    line-height: 19px;
+    padding-left: 18px;
+    margin-bottom: 27px;
+
+    &_top {
+      margin-top: 36.64px;
+    }
+  }
 }
 
 .projects-images {
@@ -282,10 +411,38 @@ $gray: rgba(255, 255, 255, 0.3);
   padding-top: 60px;
   margin-left: 48px;
   z-index: 1;
-  
+  @media (max-width: 375px) {
+    display: none;
+  }
+
   &__image:nth-child(2) {
     margin-right: 20px;
   }
+
+  &_mobile {
+    display: none;
+  }
+
+}
+
+.project-images_mobile {
+  display: none;
+
+  @media (max-width: 375px) {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    &__image {
+      width: 90.67%;
+      height: auto;
+      margin-top: 36px;
+    }
+    &__flat {
+      margin-top: 0px;
+    }
+
+  }
+
 }
 
 .slider-buttons__left {
@@ -295,6 +452,15 @@ $gray: rgba(255, 255, 255, 0.3);
   top: 46.5%;
   left: 25px;
   cursor: pointer;
+  @media (max-width: 375px) {
+    display: block;
+    height: 36px;
+    top: 50%;
+    left: 32px;
+    &_flat {
+      top: 43%;
+    }
+  }
 }
 
 .slider-buttons__right {
@@ -303,8 +469,15 @@ $gray: rgba(255, 255, 255, 0.3);
   top: 46.5%;
   right: 25px;
   cursor: pointer;
+  @media (max-width: 375px) {
+    height: 36px;
+    top: 50%;
+    right: 32px;
+    &_flat {
+      top: 43%;
+    }
+  }
 }
-
 
 .pagination {
   margin: auto;
@@ -312,6 +485,9 @@ $gray: rgba(255, 255, 255, 0.3);
   text-align: center;
   position: relative;
   z-index: 1;
+  @media (max-width: 375px) {
+    display: none;
+  }
 
   &__dot {
     position: relative;
@@ -351,6 +527,13 @@ $gray: rgba(255, 255, 255, 0.3);
   width: 100%;
   text-align: center;
   margin-top: -305px;
+  @media (max-width: 375px) {
+    display: block;
+    height: 885px;
+    border: 0;
+    background: $dark;
+    margin: 0;
+  }
 }
 
 .video-title {
@@ -359,22 +542,41 @@ $gray: rgba(255, 255, 255, 0.3);
   line-height: 28px;
   text-transform: uppercase;
   color: $light;
+  @media (max-width: 375px) {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    &_next {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
 }
 
 .video-logo {
   margin-bottom: 30px;
+  @media (max-width: 375px) {
+    margin-bottom: 40px;
+  }
 }
 
 .video {
   position: relative;
   width: 56.81%;
   height: 434px;
-
+  @media (max-width: 375px) {
+    width: 90.67%;
+    height: 207px;
+  }
 }
 
 .video-dash {
   margin-top: 50px;
   margin-bottom: 30px;
+  @media (max-width: 375px) {
+    margin-top: 28px;
+    margin-bottom: 21px;
+  }
 }
 
 .video-description {
@@ -382,7 +584,19 @@ $gray: rgba(255, 255, 255, 0.3);
   font-size: 20px;
   line-height: 34px;
   color: #363636;
+  width: 47.35%;
+  margin: 0 auto;
   margin-bottom: 91px;
+  @media (max-width: 375px) {
+    width: 100%;
+    margin-bottom: 61px;
+    font-size: 14px;
+    line-height: 24px;
+    color: $light;
+    &_next {
+      display: none;
+    }
+  }
 }
 
 .form-row {
@@ -392,17 +606,30 @@ $gray: rgba(255, 255, 255, 0.3);
   flex-wrap: wrap;
   margin-bottom: 39px;
   width: 100%;
-}
-
-.form-row:last-child {
-  justify-content: center;
+  @media (max-width: 375px) {
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
   align-items: start;
-
+  @media (max-width: 375px) {
+    &_contact-row {
+      margin-bottom: 63px;
+    }
+    &:nth-child(3){
+      color: $light;
+      order: 4;
+    }
+    &:nth-child(4){
+      order: 3;
+      margin: 0 0 62.43px 0;
+    }
+  }
+  
   &__input {
     padding-bottom: 20px;
     margin: 8px 0;
@@ -413,6 +640,15 @@ $gray: rgba(255, 255, 255, 0.3);
     font-family: "FuturaBookC";
     outline: none;
     background: none;
+    @media (max-width: 375px) {
+      width: 100%;
+      margin: 6.49px 0 63px 0;
+      padding-bottom: 8px;
+      border-bottom: 1px solid $light;
+      &_mob {
+        margin: 6.49px 0 26.54px 0;
+      }
+    }
   }
 
   &__input::placeholder {
@@ -420,6 +656,9 @@ $gray: rgba(255, 255, 255, 0.3);
     font-size: 18px;
     line-height: 24px;
     color: #363636;
+    @media (max-width: 375px) {
+      color: $light;
+    }
   }
 
   &__input_condition {
@@ -447,8 +686,10 @@ $gray: rgba(255, 255, 255, 0.3);
   }
   &__input_contact_row {
     width: 231px;
+    @media (max-width: 375px) {
+      width: 100%;
+    }
   }
-
 
   &__input_contact::placeholder {
     font-family: "FuturaBookC";
@@ -463,6 +704,9 @@ $gray: rgba(255, 255, 255, 0.3);
     font-size: 15px;
     line-height: 20px;
     color: rgba(54, 54, 54, 0.5);
+    @media (max-width: 375px) {
+      color: rgba(255, 255, 255, 0.5);
+    }
   }
 
   &__label_condition {
@@ -483,7 +727,11 @@ $gray: rgba(255, 255, 255, 0.3);
     font-size: 15px;
     line-height: 26px;
     text-transform: uppercase;
+    @media (max-width: 375px) {
+      width: 100%;
+    }
   }
+
 
   &__submit_next {
     margin: 0 auto;
@@ -493,6 +741,9 @@ $gray: rgba(255, 255, 255, 0.3);
 .video-form {
   width: 53.55%;
   margin: 0 auto;
+  @media (max-width: 375px) {
+    width: 90.67%;
+  }
 }
 
 /* The container */
@@ -511,9 +762,20 @@ $gray: rgba(255, 255, 255, 0.3);
   font-size: 16px;
   line-height: 22px;
   color: #181818;
+  @media (max-width: 375px) {
+    color: $light;
+  }
 
   &_condition {
     color: $light;
+  }
+
+  &_centered {
+    margin: 0 auto;
+    margin-top: 33.24px;
+    @media (max-width: 375px) {
+      margin-top: 0;
+    }
   }
 }
 
@@ -537,6 +799,9 @@ $gray: rgba(255, 255, 255, 0.3);
 
   &_next {
     left: 105px;
+    @media (max-width: 375px) {
+      left: 0;
+    }
   }
 }
 
@@ -575,10 +840,26 @@ $gray: rgba(255, 255, 255, 0.3);
   transform: rotate(45deg);
 }
 
+.repair-main-container{
+  @media (max-width: 375px) {
+    background: $dark;
+  }
+}
+
 .repair-types-container {
   width: 85.95%;
   margin: 0 auto;
   text-align: center;
+  @media (max-width: 375px) {
+    width: 90.67%;
+    height: 1816px;
+  }
+
+  &_next {
+    @media (max-width: 375px) {
+      height: auto;
+    }
+  }
 }
 
 .type-header-title {
@@ -589,9 +870,24 @@ $gray: rgba(255, 255, 255, 0.3);
   text-align: center;
   text-transform: uppercase;
   color: #181818;
+  @media (max-width: 375px) {
+    padding: 83px 0 17px 0;
+    margin: 0;
+  }
+
   &_next {
     margin: 112.5px 0 13px 0;
+    @media (max-width: 375px) {
+      padding: 0;
+      padding-top: 52px;
+      font-size: 22px;
+      line-height: 138.6%;
+      margin: 0;
+      color: $light;
+    }
   }
+  
+
 }
 
 .repair-types {
@@ -601,11 +897,24 @@ $gray: rgba(255, 255, 255, 0.3);
   flex-wrap: wrap;
   width: 100%;
   margin-top: 33px;
+  @media (max-width: 375px) {
+    display: block;
+    margin-top: 40px;
+  }
 
   &__item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (max-width: 375px) {
+      align-items: start;
+    }
+  }
+
+  &__image {
+    @media (max-width: 375px) {
+      width: 100%;
+    }
   }
 }
 
@@ -619,6 +928,14 @@ $gray: rgba(255, 255, 255, 0.3);
   flex-direction: column;
   justify-content: start;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+  @media (max-width: 375px) {
+    display: block;
+    text-align: start;
+    margin-top: -142px;
+    margin-bottom: 79px;
+    width: 270px;
+    height: auto;
+  }
 
   &__title {
     text-align: start;
@@ -627,6 +944,12 @@ $gray: rgba(255, 255, 255, 0.3);
     font-size: 18px;
     line-height: 25px;
     color: #363636;
+    @media (max-width: 375px) {
+      padding: 20px 31px 0;
+      width: 100%;
+      font-size: 15px;
+      line-height: 21px;
+    }
   }
 
   &__list {
@@ -636,6 +959,11 @@ $gray: rgba(255, 255, 255, 0.3);
     line-height: 25px;
     color: #959595;
     margin-bottom: 19px;
+    @media (max-width: 375px) {
+      margin-bottom: 24px;
+      font-size: 13px;
+      line-height: 22px;
+    }
   }
 }
 
@@ -644,6 +972,9 @@ $gray: rgba(255, 255, 255, 0.3);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media (max-width: 375px) {
+    display: none;
+  }
 }
 
 .condition-form-container {
@@ -704,6 +1035,10 @@ $gray: rgba(255, 255, 255, 0.3);
 .flat-types-container {
   height: 1018px;
   position: relative;
+  @media (max-width: 375px) {
+    background: linear-gradient( $light 63%, $dark 63% 80%);;
+    height: auto;
+  }
 }
 
 .flat-back-image {
@@ -711,6 +1046,9 @@ $gray: rgba(255, 255, 255, 0.3);
   height: 864px;
   margin-top: 114px;
   z-index: -1;
+  @media (max-width: 375px) {
+    display: none;
+  }
 
   &_size {
     width: 100%;
@@ -722,10 +1060,17 @@ $gray: rgba(255, 255, 255, 0.3);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 375px) {
+    display: block;
+    padding: 0;
+  }
 }
 
 .flat-information {
   margin-top: 144px;
+  @media (max-width: 375px) {
+    margin: 0;
+  }
 
   &__title {
     font-family: "Yeseva One";
@@ -733,11 +1078,20 @@ $gray: rgba(255, 255, 255, 0.3);
     line-height: 37px;
     text-transform: uppercase;
     color: $yellow;
+    @media (max-width: 375px) {
+      text-align: center;
+      font-size: 22px;
+      line-height: 30px;
+      margin-bottom: 24px;
+    }
   }
 
   &__links {
     display: flex;
     flex-direction: column;
+    @media (max-width: 375px) {
+      display: none;
+    }
   }
 
   &__link {
@@ -763,6 +1117,9 @@ $gray: rgba(255, 255, 255, 0.3);
 .flat-images {
   height: 1018px;
   display: flex;
+  @media (max-width: 375px) {
+      display: none;
+  }
 }
 
 .image-row {
@@ -793,8 +1150,14 @@ $gray: rgba(255, 255, 255, 0.3);
   line-height: 27px;
   text-align: center;
   color: #363636;
+  @media (max-width: 375px) {
+    font-size: 15px;
+    line-height: 20px;
+    color: $light;
+  }
 
   &_next {
+    margin-top: 23px;
     margin-bottom: 39px;
   }
 }
@@ -804,6 +1167,9 @@ $gray: rgba(255, 255, 255, 0.3);
   height: 1615px;
   background: $dark;
   margin-top: -425px;
+  @media (max-width: 375px) {
+    display: none;
+  }
 }
 
 .steps-info {
@@ -913,6 +1279,12 @@ $gray: rgba(255, 255, 255, 0.3);
   height: 1938px;
   margin-top: -407px;
   text-align: center;
+  @media (max-width: 375px) {
+    height: auto;
+    background: $dark;
+    margin-top: 0;
+    text-align: center;
+  }
 }
 
 .team-leads {
@@ -920,11 +1292,19 @@ $gray: rgba(255, 255, 255, 0.3);
   justify-content: space-between;
   width: 76.38%;
   margin: 0 auto;
+  @media (max-width: 375px) {
+    flex-direction: column;
+    width: 90.67%;
+  }
 
   &__box {
     position: relative;
     width: 342px;
     height: 450px;
+    @media (max-width: 375px) {
+      width: 100%;
+      margin-bottom: 54px;
+    }
   }
 
   &__logo {
@@ -987,10 +1367,14 @@ $gray: rgba(255, 255, 255, 0.3);
 
 .team-description {
   margin-bottom: 39px;
+  
 }
 
 .team-dash {
   margin: 50px 0 17px 0;
+  @media (max-width: 375px) {
+    display: none;
+  }
 }
 
 .buildings-image {
@@ -999,6 +1383,16 @@ $gray: rgba(255, 255, 255, 0.3);
 
   &_size {
     width: 100%;
+  }
+
+  @media (max-width: 375px) {
+    display: none;
+  }
+}
+
+.clients-container {
+  @media (max-width: 375px) {
+    display: none;
   }
 }
 
@@ -1081,11 +1475,17 @@ $gray: rgba(255, 255, 255, 0.3);
   }
 }
 
-
 .contacts-container {
+  display: flex;
+  flex-direction: column;
   height: 954px;
   background: url("./assets/images/footerbg.png");
   margin: 0 auto;
+  @media (max-width: 375px) {
+    width: 100%;
+    background: $dark;
+    height: auto;
+  }
 }
 
 .contact-form-container {
@@ -1095,20 +1495,47 @@ $gray: rgba(255, 255, 255, 0.3);
   width: 883px;
   height: 445.32px;
   background: $dark;
+  @media (max-width: 375px) {
+    margin: 0 auto;
+    height: auto;
+    width: 90.67%;
+  }
 }
 
 .contact-form {
   height: 376.2px;
   padding: 34.4px 181.5px;
   color: $light;
+  @media (max-width: 375px) {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
 }
 
 .contact-row {
   margin-bottom: 46px;
-
+  @media (max-width: 375px) {
+    width: 100%;
+    margin-bottom: 63px;
+    &:first-child {
+      margin-top: 30px;
+      margin-bottom: 52px;
+    }
+  }
+  
   &:nth-child(2) {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 375px) {
+      display: block;
+    }
+  }
+  
+  &:nth-child(3) {
+    @media (max-width: 375px) {
+      margin-bottom: 22px;
+    }
   }
 
   &:last-child {
@@ -1124,21 +1551,50 @@ $gray: rgba(255, 255, 255, 0.3);
   text-align: center;
   text-transform: uppercase;
   color: $yellow;
+  @media (max-width: 375px) {
+    width: 90.66%;
+    padding-top: 42px;
+    font-size: 18px;
+    line-height: 25px;
+    order: 2;
+  }
 }
 
 .sn-icons {
+  position: relative;
   display: flex;
   justify-content: space-between;
   width: 71px;
   margin: 0 auto;
   margin-top: 25px;
-
+  @media (max-width: 375px) {
+    order: 3;
+    margin-top: 23px;
+    padding-bottom: 38px;
+  }
+  
   &__icon {
     cursor: pointer;
   }
+  
 }
 
 .map {
   text-align: center;
   margin-top: 30px;
+  @media (max-width: 375px) {
+    order: 1;
+    margin-top: 46px;
+    &__image {
+      width: 90.66%;
+    }
+  }
 }
+
+.footer {
+  @media (max-width: 375px) {
+    display: none;
+  }
+}
+
+

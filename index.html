@@ -43,13 +43,11 @@
                     <h2 class="article__title">Turnkey Repair in the<br>city of <span
                             class="article__title_city-name">Rostov-on-Don</span></h2>
                     <p class="article__text">Get ready-made turnkey repairs on time<br>
-                        with work time saving up to 45 days and 20% from<br>
+                        with work time saving up to 45 days and 20% from
                         cost of materials due to the organization of work</p>
                     <a href="#" class="button button_calculate">CALCULATE THE COST</a>
-                    <a href="#" class="button button_submit">SUBMIT YOUR APPLICATION</a>
+                    <a href="#" class="button button_submit">SUBMIT <span class="button_submit_mobile">YOUR APPLICATION</span></a>
                 </article>
-
-
             </div>
         </section>
         <a href="" class="scroll-text">Scroll down <i class="fas fa-chevron-down scroll-button"></i></a>
@@ -70,7 +68,13 @@
                     <p class="projects-text__description">Only a small part of the work performed by our company is
                         presented on the site. For 14 years on in the construction
                         market we have made happy more than 1000 families</p>
-                    <div class="row">
+                    <div class="project-images_mobile">
+                        <img class="slider-buttons__left" src="./assets/images/slidermleft.png" alt="">
+                        <img src="./assets/images/ohidden.png" alt="" class="project-images_mobile__image">
+                        <img class="slider-buttons__right" src="./assets/images/slidermright.png" alt="">
+                    </div>
+
+                    <div class="row row_top">
                         <div class="projects-text__information">
                             <div class="information-title">City:</div>
                             <div class="information-text">Rostov-on-Don<br>LCD admiral</div>
@@ -124,10 +128,10 @@
                 <img src="./assets/images/dash.png" alt="">
             </div>
             <div class="video-description">
-                At each facility, a camera is installed that broadcasts the progress of work on the clock.<br>At any
+                At each facility, a camera is installed that broadcasts the progress of work on the clock. At any
                 time,
-                you can go to our website and monitor the progress of work in your<br>apartment. You can watch the live
-                broadcast from one of our facilities!<br>Leave a request below and you will receive a link to the
+                you can go to our website and monitor the progress of work in your apartment. You can watch the live
+                broadcast from one of our facilities! Leave a request below and you will receive a link to the
                 broadcast.
             </div>
             <form class="video-form">
@@ -139,21 +143,17 @@
                     </div>
                     <div class="form-group">
                         <label class="form-group__label" for="phone">Phone</label>
-                        <input class="form-group__input" id="phone" type="text" required
+                        <input class="form-group__input form-group__input_mob" id="phone" type="text" required
                             placeholder="Your phone number:">
                     </div>
                     <div class="form-group">
-
                         <input class="form-group__submit" type="submit" value="Submit">
                     </div>
-                </div>
-                <div class="form-row">
-                    <label class="checkbox-container">
+                    <label class="form-group checkbox-container checkbox-container_centered">
                         <input type="checkbox" checked="checked">
                         <span class="checkmark"></span>
                         I agree to the processing of personal data
                     </label>
-                </div>
                 </div>
             </form>
         </section>
@@ -164,7 +164,7 @@
             </div>
             <div class="repair-types">
                 <div class="repair-types__item">
-                    <img src="./assets/images/type1.png" alt="">
+                    <img class=repair-types__image src="./assets/images/type1.png" alt="">
                     <div class="box">
                         <div class="box__title">Redecorating</div>
                         <ul class="box__list">
@@ -180,7 +180,7 @@
                     </div>
                 </div>
                 <div class="repair-types__item">
-                    <img src="./assets/images/type2.png" alt="">
+                    <img class=repair-types__image src="./assets/images/type2.png" alt="">
                     <div class="box">
                         <div class="box__title">Overhaul</div>
                         <ul class="box__list">
@@ -196,7 +196,7 @@
                     </div>
                 </div>
                 <div class="repair-types__item">
-                    <img src="./assets/images/type3.png" alt="">
+                    <img class=repair-types__image src="./assets/images/type3.png" alt="">
                     <div class="box">
                         <div class="box__title">Designer Repair</div>
                         <ul class="box__list">
@@ -263,7 +263,9 @@
             <div class="flat-back-image">
                 <img class="flat-back-image_size" src="./assets/images/flats.png" alt="">
             </div>
+
             <div class="flat-items">
+
                 <div class="flat-information">
                     <div class="flat-information__title">We realize your<br>wildest fantasies</div>
                     <div class="flat-information__links">
@@ -280,6 +282,7 @@
                         <li class="flat-information__link">Eclecticism</li>
                     </div>
                 </div>
+
                 <div class="flat-images">
                     <div class="image-row">
                         <div class="image-column">
@@ -297,68 +300,76 @@
                     </div>
                 </div>
             </div>
+            <div class="project-images_mobile">
+                <img class="slider-buttons__left slider-buttons__left_flat" src="./assets/images/slidermleft.png" alt="">
+                <img src="./assets/images/flatmob.png" alt=""
+                    class="project-images_mobile__image project-images_mobile__flat">
+                <img class="slider-buttons__right slider-buttons__right_flat" src="./assets/images/slidermright.png" alt="">
+            </div>
         </section>
-        <section class="repair-types-container">
-            <div class="type-header-title type-header-title_next">design project</div>
-            <img src="./assets/images/pen.png" alt="">
-            <div class="repair-description repair-description_next">
-                Design project not only helps to make the repair of your apartment more modern,<br>but also
-                significantly
-                reduces the cost of materials and reduces the time of repair work.
-            </div>
-
-            <div class="repair-types">
-                <div class="repair-types__item">
-                    <img src="./assets/images/type1.png" alt="">
-                    <div class="box">
-                        <div class="box__title">Mini</div>
-                        <ul class="box__list">
-                            <li>Measurement drawing</li>
-                            <li>Redevelopment</li>
-                            <li>Layout of furniture</li>
-                            <li>Plumbing plan. equipment</li>
-                        </ul>
-                        <a href="" class="button button_box">150 rub / m2</a>
+        <section class="repair-main-container">
+            <section class="repair-types-container repair-types-container_next">
+                <div class="type-header-title type-header-title_next">design project</div>
+                <img src="./assets/images/pen.png" alt="">
+                <div class="repair-description repair-description_next">
+                    Design project not only helps to make the repair of your apartment more modern,<br>but also
+                    significantly
+                    reduces the cost of materials and reduces the time of repair work.
+                </div>
+    
+                <div class="repair-types">
+                    <div class="repair-types__item">
+                        <img class="repair-types__image" src="./assets/images/type1.png" alt="">
+                        <div class="box">
+                            <div class="box__title">Mini</div>
+                            <ul class="box__list">
+                                <li>Measurement drawing</li>
+                                <li>Redevelopment</li>
+                                <li>Layout of furniture</li>
+                                <li>Plumbing plan. equipment</li>
+                            </ul>
+                            <a href="" class="button button_box">150 rub / m2</a>
+                        </div>
+                    </div>
+                    <div class="repair-types__item">
+                        <img class="repair-types__image" src="./assets/images/type3.png" alt="">
+                        <div class="box">
+                            <div class="box__title">Standard</div>
+                            <ul class="box__list">
+                                <li>Measurement drawing</li>
+                                <li>Redevelopment</li>
+                                <li>Layout of furniture</li>
+                                <li>Plans of ceiling</li>
+                                <li>Floor Plan</li>
+                                <li>Electricians Plan</li>
+                                <li>Lighting Plan</li>
+                            </ul>
+                            <a href="" class="button button_box">400 rub / m2</a>
+                        </div>
+                    </div>
+                    <div class="repair-types__item">
+                        <img class="repair-types__image" src="./assets/images/type2.png" alt="">
+                        <div class="box">
+                            <div class="box__title">Full</div>
+                            <ul class="box__list">
+                                <li>Measurement drawing</li>
+                                <li>Redevelopment</li>
+                                <li>Layout of furniture</li>
+                                <li>Plans of ceiling</li>
+                                <li>Floor Plan</li>
+                                <li>Electricians Plan</li>
+                                <li>Lighting Plan</li>
+                                <li>Wall reamers</li>
+                                <li>3D visualization</li>
+                                <li>Bill of materials</li>
+                                <li>Departure for a selection</li>
+                                <li>Furniture selection</li>
+                            </ul>
+                            <a href="" class="button button_box">900 rub / m2</a>
+                        </div>
                     </div>
                 </div>
-                <div class="repair-types__item">
-                    <img src="./assets/images/type3.png" alt="">
-                    <div class="box">
-                        <div class="box__title">Standard</div>
-                        <ul class="box__list">
-                            <li>Measurement drawing</li>
-                            <li>Redevelopment</li>
-                            <li>Layout of furniture</li>
-                            <li>Plans of ceiling</li>
-                            <li>Floor Plan</li>
-                            <li>Electricians Plan</li>
-                            <li>Lighting Plan</li>
-                        </ul>
-                        <a href="" class="button button_box">400 rub / m2</a>
-                    </div>
-                </div>
-                <div class="repair-types__item">
-                    <img src="./assets/images/type2.png" alt="">
-                    <div class="box">
-                        <div class="box__title">Full</div>
-                        <ul class="box__list">
-                            <li>Measurement drawing</li>
-                            <li>Redevelopment</li>
-                            <li>Layout of furniture</li>
-                            <li>Plans of ceiling</li>
-                            <li>Floor Plan</li>
-                            <li>Electricians Plan</li>
-                            <li>Lighting Plan</li>
-                            <li>Wall reamers</li>
-                            <li>3D visualization</li>
-                            <li>Bill of materials</li>
-                            <li>Departure for a selection</li>
-                            <li>Furniture selection</li>
-                        </ul>
-                        <a href="" class="button button_box">900 rub / m2</a>
-                    </div>
-                </div>
-            </div>
+            </section>
         </section>
         <section class="steps-container">
             <div class="steps-info">
@@ -463,7 +474,7 @@
             <div class="team-dash">
                 <img src="./assets/images/dash.png" alt="">
             </div>
-            <div class="video-description">
+            <div class="video-description video-description_next">
                 Each employee of our company is a qualified full-time specialist <br> with work experience of 6 years.
                 <br> We do
                 not have laborers and guest workers, each employee carries out <br> work corresponding to his specialty.
@@ -557,10 +568,10 @@
             <div class="contact-form-container">
                 <form class="contact-form">
                     <div class="contact-row">
-                        <div class="video-title">have any questions?</div>
+                        <div class="video-title video-title_next">have any questions?</div>
                     </div>
                     <div class="contact-row">
-                        <div class="form-group">
+                        <div class="form-group form-group_contact-row">
                             <label class="form-group__label form-group__label_condition" for="name">Name</label>
                             <input class="form-group__input form-group__input_contact form-group__input_contact_row"
                                 id="name" type="text" required placeholder="What is your name:">
@@ -595,19 +606,20 @@
         </section>
 
         <section class="contacts-container">
-            <div class="address">Rostov-on-Don, Nansen St., 239 Shopping Center <br> Decorum Tel +7 (928) 768 32 29</div>
+            <div class="address">Rostov-on-Don, Nansen St., 239 Shopping Center <br> Decorum Tel +7 (928) 768 32 29
+            </div>
             <div class="sn-icons">
                 <img class="sn-icons__icon" src="./assets/images/email.png" alt="">
                 <img class="sn-icons__icon" src="./assets/images/insta.png" alt="">
             </div>
             <div class="map">
-                <img src="./assets/images/map.png" alt="">
+                <img class="map__image" src="./assets/images/map.png" alt="">
             </div>
         </section>
 
     </main>
     <div class="header-container">
-        <footer class="header">
+        <footer class="header footer">
             <h1 class="logo">IC "Repair Design Project"</h1>
             <nav>
                 <ul class="navbar">
